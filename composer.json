@@ -1,0 +1,23 @@
+{
+    "name": "izica/php-html-classnames",
+    "description": "Php generator for html classnames",
+    "authors": [
+        {
+            "name": "Golovarchuk Artyom",
+            "email": "artemiztomska@gmail.com"
+        }
+    ],
+    "keywords": ["html", "php", "generator", "class", "html classes"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "classmap": [
+            "PhpHtmlClassnames.php"
+        ],
+        "files": [
+            "classnames.php"
+        ]
+    }
+}
