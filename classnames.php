@@ -1,28 +1,10 @@
 <?php
+require_once 'PhpHtmlClassnames.php';
+
 function classnames($arConditions){
-    $arClassnames = [];
-    foreach ($arConditions as $sClassname => $bCondition) {
-        if(is_int($sClassname)){
-            $arClassnames[] = $bCondition;
-        }else{
-            if($bCondition){
-                $arClassnames[] = $sClassname;
-            }
-        }
-    }
-    return implode(' ', $arClassnames);
+    return PhpHtmlClassnames::get($arConditions);
 }
 
 function cn($arConditions){
-    $arClassnames = [];
-    foreach ($arConditions as $sClassname => $bCondition) {
-        if(is_int($sClassname)){
-            $arClassnames[] = $bCondition;
-        }else{
-            if($bCondition){
-                $arClassnames[] = $sClassname;
-            }
-        }
-    }
-    return implode(' ', $arClassnames);
+    return PhpHtmlClassnames::get($arConditions);
 }
